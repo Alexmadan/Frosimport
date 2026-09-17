@@ -123,8 +123,7 @@
     .full-background {
         width: 100% !important;
         min-height: 300px !important;
-        /* Если хочешь мобильную картинку: */
-        /* background: url('image/Firstpagemobile3.jpg') center center / cover no-repeat !important; */
+        background: url('image/Firstpagemobile3.jpg') center center / contain no-repeat !important;
         background-color: #1a252f !important;
         margin: 0 !important;
     }

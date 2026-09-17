@@ -1,0 +1,130 @@
+/* ===== ОСНОВНЫЕ СТИЛИ ГЛАВНОЙ СТРАНИЦЫ ===== */
+.main-content-area {
+    margin-left: 220px;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.slogan-container {
+    padding: 15px 20px 10px 20px;
+    background-color: #f5f5f5;
+    flex-shrink: 0;
+    z-index: 2;
+}
+.slogan-top {
+    flex-shrink: 0;
+    width: 100%;
+    padding: 15px 20px 10px 20px;
+    z-index: 3;
+    position: relative;
+}
+.content-wrapper {
+    flex: 1;
+    /* display: flex; */
+    padding: 0 20px 20px 20px;
+    box-sizing: border-box;
+}
+.compact-slogan {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 8px;
+    padding: 8px 15px;
+    max-width: 900px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    border: 3px solid #ff6b00;
+    box-sizing: border-box;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 40px;
+}
+.slogan-text {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.latin-quote {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    font-size: 16px;
+    font-style: italic;
+    color: #cc5500;
+    line-height: 1.1;
+    margin: 0 0 3px 0;
+    font-weight: 600;
+}
+.russian-translation {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.1;
+    margin: 0;
+    font-weight: 500;
+}
+.quote-decoration {
+    font-size: 40px;
+    color: #ff6b00;
+    font-family: 'Georgia', serif;
+    margin-right: 10px;
+    line-height: 1;
+    opacity: 0.7;
+}
+.full-background {
+    width: 100%;
+    min-height: 800px;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.03) 100%), url('image/Firstpage3.png') center center / cover no-repeat;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    position: relative;
+    margin-bottom: 20px;
+}
+@media (max-width: 768px) {
+    .slogan-container,
+    .slogan-top {
+        padding: 5px !important;
+        margin: 0 !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
+    
+    .compact-slogan {
+        width: calc(100% - 20px) !important;
+        margin: 0 auto !important;
+        padding: 8px 12px !important;
+        flex-direction: column !important;
+        box-sizing: border-box !important;
+    }
+    
+    .latin-quote {
+        font-size: 14px !important;
+        text-align: center !important;
+    }
+    
+    .russian-translation {
+        font-size: 12px !important;
+        text-align: center !important;
+    }
+    
+    .quote-decoration {
+        font-size: 24px !important;
+        margin-right: 0 !important;
+        margin-bottom: 4px !important;
+    }
+    
+    .content-wrapper {
+        padding: 10px !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+        display: block !important; /* Убираем flex, который ломает ширину */
+    }
+    .full-background {
+    width: 100% !important;
+    min-height: 300px !important;
+    background: red !important;
+    margin: 0 !important;
+}
+    
+}

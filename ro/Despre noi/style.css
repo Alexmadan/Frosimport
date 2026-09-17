@@ -1,0 +1,292 @@
+.common-sidebar.without-logo {
+    padding-top: 10px;
+}
+.main-content-area {
+    margin-left: 220px;
+    min-height: 100vh;
+    position: relative;
+}
+.content-wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.page-title {
+    color: #333;
+    margin: 30px auto;
+    font-size: 32px;
+    text-align: center;
+    border-bottom: 2px solid #ff6b00;
+    padding-bottom: 15px;
+    max-width: 1200px;
+}
+.about-container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+.about-item {
+    background: #f9f9f9;
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    position: relative;
+    transition: all 0.3s ease;
+}
+.about-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, #ff6b00, #ff8c00);
+}
+.about-item:nth-child(2)::before {
+    background: linear-gradient(180deg, #3498db, #2ecc71);
+}
+.about-item:nth-child(3)::before {
+    background: linear-gradient(180deg, #9b59b6, #8e44ad);
+}
+.about-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+.about-subtitle {
+    color: #2c3e50;
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgba(255, 107, 0, 0.2);
+}
+.about-list {
+    list-style: none;
+    padding-left: 20px;
+    margin: 0;
+}
+.about-list li {
+    margin-bottom: 15px;
+    padding-left: 25px;
+    position: relative;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #444;
+}
+.about-list li::before {
+    content: "*";
+    position: absolute;
+    left: 0;
+    color: #27ae60;
+    font-weight: bold;
+}
+.about-list strong {
+    display: inline-block;
+    width: 150px;
+    color: #2c3e50;
+}
+
+/* ===== КАРТОЧКИ ЦЕННОСТЕЙ ===== */
+.value-container {
+    display: block;
+    margin: 20px 0;
+}
+.value-card {
+    width: 100%;
+    max-width: 600px;
+    background: white;
+    border-radius: 8px;
+    padding: 20px 25px;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+    border-left: 4px solid #3498db;
+    transition: transform 0.3s ease;
+    box-sizing: border-box;
+}
+.value-card:nth-child(2) {
+    border-left-color: #ff6b00;
+}
+.value-card:nth-child(3) {
+    border-left-color: #2ecc71;
+}
+.value-card:nth-child(4) {
+    border-left-color: #9b59b6;
+}
+.value-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+.value-card h4 {
+    color: #2c3e50;
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.value-card p {
+    font-size: 1.4rem;
+    color: #555;
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* ===== КОМАНДА ===== */
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 -10px;
+}
+.team-member {
+    width: calc(33.333% - 20px);
+    margin: 10px;
+    text-align: center;
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+    box-sizing: border-box;
+}
+.team-member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+.photo-placeholder {
+    width: 150px;
+    height: 180px;
+    margin: 0 auto 15px;
+    background: #f5f5f5;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 2px solid #e0e0e0;
+}
+.photo-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.team-member h4 {
+    color: #2c3e50;
+    font-size: 1.6rem;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+.team-member p {
+    font-size: 1.4rem;
+    color: #555;
+    margin: 0;
+    line-height: 1.4;
+}
+
+/* ===== КНОПКА НАЗАД ===== */
+.back-link {
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+    max-width: 1200px;
+}
+.back-link a {
+    display: inline-block;
+    background-color: #ff6b00;
+    color: white;
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+.back-link a:hover {
+    background-color: #cc5500;
+}
+
+/* ===== МОБИЛЬНАЯ АДАПТАЦИЯ (исправлено смещение вправо) ===== */
+@media (max-width: 768px) {
+    /* Главное исправление: контент на всю ширину, без левого отступа */
+    .main-content-area {
+        margin-left: 0 !important;
+        width: 100%;
+        padding: 0 !important;
+    }
+    .content-wrapper {
+        padding: 10px;
+        max-width: 100%;
+        margin: 0;
+    }
+    .page-title {
+        font-size: 24px;
+        margin: 20px auto;
+        padding-bottom: 10px;
+    }
+    .about-container {
+        padding: 5px;
+    }
+    .about-item {
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+    .about-subtitle {
+        font-size: 1.6rem;
+        margin-bottom: 15px;
+    }
+    .about-list li {
+        font-size: 14px;
+        padding-left: 20px;
+    }
+    .about-list strong {
+        display: inline; /* убираем фиксированную ширину */
+        width: auto;
+    }
+    .value-card {
+        padding: 15px;
+        max-width: 100%;
+    }
+    .value-card h4 {
+        font-size: 1.3rem;
+    }
+    .value-card p {
+        font-size: 1rem;
+    }
+    .team-container {
+        margin: 0;
+        justify-content: center;
+    }
+    .team-member {
+        width: calc(100% - 20px);
+        max-width: 300px;
+        margin: 10px auto;
+    }
+    .photo-placeholder {
+        width: 120px;
+        height: 140px;
+    }
+    .team-member h4 {
+        font-size: 1.3rem;
+    }
+    .team-member p {
+        font-size: 1rem;
+    }
+    .back-link {
+        margin: 30px auto;
+        padding: 10px;
+    }
+    .back-link a {
+        padding: 8px 20px;
+        font-size: 14px;
+    }
+    /* Отключаем анимации на мобильных */
+    .about-item:hover,
+    .value-card:hover,
+    .team-member:hover {
+        transform: none;
+    }
+}
+
+/* Планшеты */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .team-member {
+        width: calc(50% - 20px);
+    }
+    .value-card {
+        max-width: 100%;
+    }
+}

@@ -121,7 +121,7 @@
         display: block !important; /* Убираем flex, который ломает ширину */
     }
     
-    .full-background {
+  .full-background {
         width: 100% !important;
         min-height: 300px !important;
         /* Если хочешь мобильную картинку: */

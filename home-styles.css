@@ -82,6 +82,11 @@
     margin-bottom: 20px;
 }
 @media (max-width: 768px) {
+    .main-content-area {
+        margin-left: 0 !important;
+        width: 100% !important;
+    }
+    
     .slogan-container,
     .slogan-top {
         padding: 5px !important;
@@ -118,14 +123,14 @@
         padding: 10px !important;
         width: 100% !important;
         box-sizing: border-box !important;
-        display: block !important; /* Убираем flex, который ломает ширину */
+        display: block !important;
     }
+    
     .full-background {
         width: 100% !important;
         min-height: 300px !important;
-        background: url('image/Firstpage3.png') center center / contain no-repeat !important;
+        background: url('image/Firstpagemobile3.jpg') center center / contain no-repeat !important;
         background-color: #1a252f !important;
         margin: 0 !important;
-    } 
-    
+    }
 }
